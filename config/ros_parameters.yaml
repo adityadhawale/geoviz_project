@@ -1,0 +1,15 @@
+input_params:
+  bagname: /home/aditya/academics/geoviz/project/correct_depth_short.bag
+  sync_messages:
+    - topic: /depth_1
+      type: DepthImage1
+    - topic: /depth_2
+      type: DepthImage2
+    - topic: /state_estimator/odom
+      type: Odometry
+
+mapping_params:
+  depth_scale: 1000
+  patch_size: 64
+  neighbor_dist: 0.2
+  min_points: 100

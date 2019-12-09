@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="geoviz_project" name="multi_stereo_mapping_node" type="multi_stereo_mapping_node" output="screen">
+	<param name="config_file" type="string" value="$(find geoviz_project)/config/ros_parameters.yaml"/>
+	<param name="calibration_file" type="string" value="$(find geoviz_project)/config/sim-front-back.yaml"/>
+	</node>
+</launch>
